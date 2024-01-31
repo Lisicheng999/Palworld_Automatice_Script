@@ -1,4 +1,4 @@
-## 幻兽帕鲁简易自动重启+自动备份脚本v1.0
+## 幻兽帕鲁简易自动重启+自动备份脚本v1.0(for Windows)
 ##### The script is not limited by the version of the game, and more features may be added in the future
 ### 参数说明
 `$exePath` 启动服务器启动绝对路径

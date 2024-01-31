@@ -14,6 +14,7 @@ while ($true) {
 	# Start-Sleep -Seconds ($hours * 60 * 60)
 	$hours = 4
 	for ($i = 0; $i -lt $hours; $i++) {
+		Start-Sleep -Seconds (60 * 60)
 		# Get the current time
 		$currentTime = Get-Date
 		Write-Host "Time now: $currentTime"
@@ -22,8 +23,6 @@ while ($true) {
 		# Copy folder
 		Copy-Item -Path $sourcePath -Destination $newDestinationPath -Recurse -Force
 		Write-Host "The file has been copied to the target location: $newDestinationPath"
-
-		Start-Sleep -Seconds (60 * 60)
 	}
 
 	$processes = Get-Process | Where-Object { $_.Name -like "*Pal*" }
